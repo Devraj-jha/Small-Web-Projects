@@ -23,8 +23,25 @@ function CalculateTip() {
  let tipAmt =  (tip/100) * bill;
  let totalAmt = tipAmt + bill;
 
+ tipAmt = tipAmt.toFixed(2);
+ totalAmt = totalAmt.toFixed(2);
+
  document.querySelector('.tipAmount').textContent = tipAmt;
  document.querySelector('.totalAmount').textContent = totalAmt;
 
 }
+function reset(){
+    
+
+ document.querySelector('.tipAmount').textContent = "";
+ document.querySelector('.totalAmount').textContent = "";
+
+ document.getElementById('billAmt').value = ""; 
+ document.getElementById('tipPer').value = "";
+
+
+ document.getElementById('billAmt').focus(); 
+
+}
 btn.addEventListener('click', CalculateTip)
+document.getElementById('reset').addEventListener('click', reset)

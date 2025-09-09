@@ -1,0 +1,15 @@
+we are going to build a tip calculator app..
+what we need to do first...
+
+user enters 
+        => bill amt
+        => tip percentage
+
+out put 
+        => tip amt
+        total amt 
+
+
+what I learn till now.. 
+what are labels used for... like you can click on label and it will show on input field.
+2nd i learn

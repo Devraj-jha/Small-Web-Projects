@@ -1,0 +1,23 @@
+body {
+   background-size: cover;
+   background-position: center;
+    margin: 0;
+    padding: 0;
+   height: 100vh;
+   background-repeat: no-repeat;
+    background-image: url('galaxy.jpg');
+}
+
+
+  #quote-box {
+      background: white;
+      padding: 20px 30px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+    }

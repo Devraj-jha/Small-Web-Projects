@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shopping Cart</title>
+
+  <!-- Tailwind CSS CDN (latest stable) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+  <!-- Cart Modal -->
+  <div class="relative w-full max-w-md rounded-lg shadow-lg border border-gray-200 bg-white p-6">
+    <button class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 transition">
+      <span class="sr-only">Close cart</span>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+
+    <h2 class="text-xl font-semibold text-gray-800 mb-4 text-center">Your Shopping Cart</h2>
+
+    <ul class="space-y-4">
+      <!-- Cart Item -->
+      <li class="flex items-center gap-4 border-b border-gray-200 pb-3">
+        <div class="w-16 h-16 rounded-md bg-gray-200 flex items-center justify-center text-gray-400 text-sm">
+          IMG
+        </div>
+        <div class="flex-1">
+          <h3 class="text-sm font-medium text-gray-800">Basic Tee</h3>
+          <p class="text-xs text-gray-500">Size: M | Color: Black</p>
+        </div>
+        <div class="flex items-center gap-2">
+          <input type="number" min="1" value="1" class="w-12 border rounded-md text-center text-sm" />
+          <button class="text-gray-400 hover:text-red-500 transition">
+            <span class="sr-only">Remove item</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9M4.772 5.79L5.5 20a2.25 2.25 0 002.25 2h8.5a2.25 2.25 0 002.25-2l.728-14.21M9.75 4.5v-.75a1.5 1.5 0 013 0v.75m-7.5 0h12" />
+            </svg>
+          </button>
+        </div>
+      </li>
+
+      <!-- Repeat for more items if needed -->
+      <li class="flex items-center gap-4 border-b border-gray-200 pb-3">
+        <div class="w-16 h-16 rounded-md bg-gray-200 flex items-center justify-center text-gray-400 text-sm">
+          IMG
+        </div>
+        <div class="flex-1">
+          <h3 class="text-sm font-medium text-gray-800">Comfort Hoodie</h3>
+          <p class="text-xs text-gray-500">Size: L | Color: Gray</p>
+        </div>
+        <div class="flex items-center gap-2">
+          <input type="number" min="1" value="2" class="w-12 border rounded-md text-center text-sm" />
+          <button class="text-gray-400 hover:text-red-500 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9M4.772 5.79L5.5 20a2.25 2.25 0 002.25 2h8.5a2.25 2.25 0 002.25-2l.728-14.21M9.75 4.5v-.75a1.5 1.5 0 013 0v.75m-7.5 0h12" />
+            </svg>
+          </button>
+        </div>
+      </li>
+    </ul>
+
+    <!-- Cart Actions -->
+    <div class="mt-6 space-y-3 text-center">
+      <a href="#" class="block rounded-md border border-gray-400 px-5 py-2 text-sm text-gray-700 hover:bg-gray-100 transition">
+        View My Cart (2)
+      </a>
+
+      <a href="#" class="block rounded-md bg-gray-800 px-5 py-2 text-sm text-white hover:bg-gray-700 transition">
+        Checkout
+      </a>
+
+      <a href="#" class="inline-block text-sm text-gray-500 underline hover:text-gray-700 transition">
+        Continue Shopping
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>
